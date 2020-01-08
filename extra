@@ -1,0 +1,64 @@
+npm
+node package manager
+open source
+
+/////
+JSON
+[
+    {
+        "name":"john"
+        "rollno":1
+    },
+    {
+        "name":"ammy"
+        "rollno":2
+    }
+]
+///package.JSON
+> name
+> version
+> packages
+> script
+
+>>>>>>>>>>>>>>
+Step To Createe package.JSON
+<<<<<<<<<<<<<<<<<<<
+** Node.js must be theree in system
+>> navigate to the folder using cmd/terminal
+>> npm init
+>> Answer all Questions
+>> type "yes"
+
+
+
+>>>>>>>>>>>
+packages
+<<<<<<<<<<<<<
+Local Package 
+>>>>
+Step to install local packages
+<<<<<<<
+>>c
+>> npm i zone.js / npm install zone.js
+
+/////////////////
+Global
+##Windows##
+>>run your command prompt as admistrator
+>>npm i -g @aakashdeveloper/create-node-app
+
+##Mac##
+>> Open your terminal
+>> sudo npm i -g @aakashdeveloper/create-node-app
+
+//////////////
+Step to setup react-app
+(one time)
+>>>npm i -g create-react-app
+(every time)
+>> navigate to the folder using cmd/terminal
+>> create-react-app firstapp
+>> cd firstapp
+>> npm start
+>> http://localhost:3000
+
