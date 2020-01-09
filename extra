@@ -62,3 +62,19 @@ Step to setup react-app
 >> npm start
 >> http://localhost:3000
 
+///////////////////////////////
+ClassComponent   | Functional 
+Logical          | Dumb (display)
+heavy as compare | Light in weight
+to Functional
+State            | Cannot State
+
+
+State & Props
+
+Component1    Props       Component2
+State         ====>    State
+
+------------------------
+Hooks Component
+-----------------------
