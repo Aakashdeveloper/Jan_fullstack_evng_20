@@ -1,14 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
+import './header.css'
 
-const Header = () => {
-    return(
-        <React.Fragment>
-            <center>
-                <h1>React App</h1>
-            </center>
-            <hr/>
-        </React.Fragment>
-    )
+class Header extends Component {
+    constructor(){
+        super()
+        
+        this.state={
+            title:'React App'
+        }
+
+    }
+
+
+    render(){
+        return(
+            <header>
+                <div className="logo">
+                    {this.state.title}
+                </div>
+                <center>
+                   <input type="text"/>
+                </center>
+                <hr/>
+            </header>
+        ) 
+    }
 }
 
 
