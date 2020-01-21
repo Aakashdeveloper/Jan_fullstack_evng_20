@@ -30,3 +30,17 @@ class calc {
         this.sub= function(a,b){return a-b}
     }
 }
+
+
+
+
+function metype(a){
+    return a.name
+}
+
+
+var john = {
+    name:'john'
+}
+
+metype.bind(john)

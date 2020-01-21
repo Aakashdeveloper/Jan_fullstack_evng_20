@@ -6,9 +6,16 @@ class Header extends Component {
         super()
         
         this.state={
-            title:'React App'
+            title:'React App',
+            keywords:''
         }
 
+    }
+
+    inputChange(event){
+        console.log(event.target.value)
+        this.setState({keywords:event.target.value})
+        this.props.userText(event.target.value)
     }
 
 
@@ -19,7 +26,8 @@ class Header extends Component {
                     {this.state.title}
                 </div>
                 <center>
-                   <input type="text"/>
+                   <input type="text" onChange={this.inputChange.bind(this)}/>
+                   <p>{this.state.keywords}</p>
                 </center>
                 <hr/>
             </header>
