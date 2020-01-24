@@ -12,7 +12,7 @@ const Artist = (props) => {
                 }
                 
                 return(
-                    <Link key={index} to="" className="artist_item"
+                    <Link key={index} to={`/artist/${item.id}`} className="artist_item"
                     style={mystyle}>
                         <div>{item.name}</div>
                     </Link>
