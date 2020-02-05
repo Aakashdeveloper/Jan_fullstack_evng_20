@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { latestNews,articleNews,galleryNews } from '../actions';
-import PropTypes from 'prop-types'
+import { bindActionCreators} from 'redux';
 
 import LatestNews from '../component/Home/latestNews';
 import ArticleNews from '../component/Home/articleNews';
@@ -10,9 +10,9 @@ import GalleryNews from '../component/Home/galleryNews';
 class Home extends Component {
     componentDidMount(){
 
-        this.props.dispatch(latestNews())
-        this.props.dispatch(articleNews())
-        this.props.dispatch(galleryNews())
+        this.props.latestNews()
+        this.props.articleNews()
+        this.props.galleryNews()
 
     }
     render(){
@@ -35,8 +35,7 @@ function mapStateToProps(state){
     }
 }
 
-Home.protoTypes={
-    dispatch:PropTypes.func
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({latestNews,articleNews,galleryNews},dispatch)
 }
-
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps,mapDispatchToProps)(Home);
