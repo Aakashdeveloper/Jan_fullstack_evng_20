@@ -30,3 +30,40 @@ export function galleryNews(){
         payload:output
     }
 }
+
+export function selectedNews(id){
+    const output = fetch(`${url}/articles?id=${id}`,{method:'GET'})
+        .then(response => response.json())
+    
+    return{
+        type:'GET_SELECTED_NEWS',
+        payload:output
+    }
+}
+
+
+export function clearSelectNews(){
+    
+    return{
+        type:'CLEAR_SELECTED_NEWS',
+        payload:[]
+    }
+}
+
+export function handleHits(array, id){
+    const output = fetch(`${url}/articles/${id}`,
+                {method:'PATCH',
+                headers:{
+                    'Accept':'applicatiion/json',
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify({likes:array})
+            })
+        .then(response => response.json())
+    
+    return{
+        type:'HANDLE_HITS',
+        payload:output
+    }
+}
+

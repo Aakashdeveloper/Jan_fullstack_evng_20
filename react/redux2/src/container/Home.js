@@ -27,7 +27,7 @@ class Home extends Component {
     }
 }
 
-function mapStateToProps(state){
+function mapStateToProp(state){
     console.log(state)
     return{
         articlesdata: state.articles,
@@ -39,4 +39,4 @@ Home.protoTypes={
     dispatch:PropTypes.func
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProp)(Home);
