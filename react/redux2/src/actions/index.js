@@ -67,3 +67,39 @@ export function handleHits(array, id){
     }
 }
 
+
+export function PostDate(title,body,category){
+    var random = Math.floor(Math.random()*1000)
+    var data = {
+        "id": random,
+        "title": title,
+        "body": body,
+        "category": category,
+        "img": "3.jpg",
+        "date": "21/21/1944",
+        "author": "Aston Kutcher",
+        "views": 678,
+        "likes": [
+        358,
+        102
+        ]
+    }
+
+
+    fetch(`${url}/articles/`,{
+        method:'POST',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+
+    .then((res) => res.json())
+
+
+    return{
+        type:'POST_FORM',
+        payload:''
+    }
+}
