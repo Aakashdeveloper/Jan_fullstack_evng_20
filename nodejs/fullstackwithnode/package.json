@@ -1,0 +1,19 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "this is node fullstack",
+  "main": "index.js",
+  "scripts": {
+   "start":"node app.js",
+   "dev":"nodemon app.js"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "VisualPath",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

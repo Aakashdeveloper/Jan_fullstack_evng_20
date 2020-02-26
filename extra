@@ -105,3 +105,16 @@ add(1,2)
   https://www.youtube.com/watch?v=IAq5OO3U-9I&t=1s
 
   npm i  graphql react-apollo graphql-tag
+
+
+
+
+
+  CRUD
+  Create Read Update Delete
+  Post   Get   Put    delete
+
+  callBack
+
+/////NNodemon//////
+  npm i -g nodemon
