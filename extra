@@ -118,3 +118,58 @@ add(1,2)
 
 /////NNodemon//////
   npm i -g nodemon
+
+
+  ///
+  in c drive
+  make folder by the name of C:/data/db
+
+  > Open Cmd 
+  > navigate to bin folder of mongodb
+  > c:/programmfile/mongodb/4.3/bin
+
+  // this command is to start server
+  > mongod 
+
+open new cmd in same path
+> mongo
+
+
+#Mac
+MongoDB Server => sudo mongod --dbpath  /System/Volumes/Data/data/db
+Mongo Client => mongo
+
+port localhost:27017
+
+[
+    {
+        id:1,
+        hindi:80
+        address:[
+            {
+                hno:1
+            },
+            {
+                hno:2
+            }
+        ]
+    },
+    {
+        id:2,
+        english:80
+    }
+]
+SQL                MongoDb
+-----------------------------
+Database          Database
+tables            collections
+rows              Document
+joins             looksup
+
+CRUD
+(Parameter)
+
+////
+Show dbs
+use classdatabase
+show collections
