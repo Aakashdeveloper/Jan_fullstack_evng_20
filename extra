@@ -169,7 +169,18 @@ joins             looksup
 CRUD
 (Parameter)
 
+POST GET PUT DELETE
 ////
 Show dbs
 use classdatabase
 show collections
+
+> db.marchmongo.insert({_id:1,name:"Jackson",class:"Node"})
+>db.marchmongo.update({_id:1},{$set:{_id:1,name:"Jackson",class:"Angular"}})
+>db.marchmongo.remove({name:"john"})
+
+//
+Redis
+Email Node
+weather app
+
