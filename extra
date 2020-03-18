@@ -182,5 +182,9 @@ show collections
 //
 Redis
 Email Node
-weather app
+login/logout
 
+
+
+
+npm i @babel/core @babel/preset-env @babel/register
