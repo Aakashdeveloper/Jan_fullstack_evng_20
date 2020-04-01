@@ -188,3 +188,9 @@ login/logout
 
 
 npm i @babel/core @babel/preset-env @babel/register
+
+
+redis-server
+redis-Cli
+Keys *
+get keyname
